@@ -149,10 +149,10 @@ if (handlingChoice()) {
   runChoice(4);
 }
 
-if (availableAmount($item`pantogram pants`) === 0) {
+/*if (availableAmount($item`pantogram pants`) === 0) {
   retrieveItem(1, $item`ten-leaf clover`);
-  cliExecute("pantogram mysticality|hot|max hp|hilarity|weapon dmg|silent");
-}
+  cliExecute('pantogram mysticality|hot|max hp|hilarity|weapon dmg|silent');
+}*/
 
 if (myLevel() < 20) levelingMood();
 familiarXpMood().execute();
@@ -228,10 +228,10 @@ if (Witchess.fightsDone() === 0) {
   );
 }
 
-if (get("_neverendingPartyFreeTurns") < 10) {
-  setProperty("choiceAdventure1322", "2"); // Reject quest (TODO: Accept food/booze)
-  setProperty("choiceAdventure1324", "5"); // Pick a fight
-  const familiar = get("_thesisDelivered")
+if (get('_neverendingPartyFreeTurns') < 10) {
+  //setProperty('choiceAdventure1322', '2'); // Reject quest (TODO: Accept food/booze)
+  setProperty('choiceAdventure1324', '5'); // Pick a fight
+  const familiar = get('_thesisDelivered')
     ? $familiar`Hovering Sombrero`
     : $familiar`Pocket Professor`;
   useFamiliar(familiar);
